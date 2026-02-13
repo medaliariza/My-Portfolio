@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #F7D9BC;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #AB9682;
+    padding: 15px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background-color: #CDB39C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+.hero-content span {
+    color: #AB9682;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #AB9682;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #8f7a69;
+}
+
+/* Sections */
+.section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #AB9682;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #AB9682;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Projects */
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    color: #AB9682;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact {
+    background-color: #CDB39C;
+}
+
+/* Footer */
+footer {
+    background-color: #AB9682;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* ===== Smooth Scroll ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Fade In Animation ===== */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Navbar Underline Hover ===== */
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== Button Hover Lift ===== */
+.hero button {
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Project Card Hover ===== */
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+}
+
+/* ===== Skill Hover ===== */
+.skill {
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
